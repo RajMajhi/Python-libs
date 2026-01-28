@@ -63,3 +63,40 @@ plt.plot(x, y2)
 plt.plot(x, y3)
 
 plt.show()
+
+#Grid 
+#grid() helps make plot easier to read by adding reference line.
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=[1, 2, 3, 4, 5, 6]
+y=[2, 4, 6, 8, 10, 12]
+
+# Customization of grid
+plt.grid(axis="y",
+        linewidth=2,
+        color="lightgrey",
+        linestyle="dotted") 
+ 
+plt.plot(x, y)
+plt.show()
+
+#BarChart
+#barchart compare categories of data by representing each category with a bar.
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+categories = np.array(["Grains", "fruits", "Vegetables", "Proteins", "Dairy", "Sweets"])
+values= np.array([4, 3, 2, 5, 3, 6])
+
+plt.bar(categories,values, color="green")
+
+plt.barh(categories,values, color="lightgreen") # horizontal barchart
+
+plt.title("Daily Consumption")
+plt.xlabel("Food",size=10)
+plt.ylabel("Quantity")
+
+plt.show()
+
