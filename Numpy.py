@@ -100,3 +100,19 @@ plt.ylabel("Quantity")
 
 plt.show()
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+categories = ["Freshman", "Sophomores", "Juniors", "Seniors"]
+values = np.array([300, 245, 280, 270])
+colors=["orange","blue","red","green"]
+
+plt.pie(values, labels = categories,
+       autopct="%1.1f%%",
+       colors=colors,
+       explode=[0,0,0,0.1],
+       shadow=True,
+       startangle=180)
+
+plt.title("College student strength")
+plt.show()
