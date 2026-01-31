@@ -583,3 +583,99 @@ plt.pie(values, labels = categories,
 
 plt.title("College student strength")
 plt.show()
+
+#Scatter Graph - it shows the relationship betwween two variables helps to identify a correlation.
+#(+,-,none), ex:- Study Hours vs Test Scores
+
+
+import matplotlib.pyplot as plt
+#import numpy as np
+
+x = [0, 1, 2, 3, 4, 5, 6, 7, 8] #hours studied
+y = [50, 55, 60, 67, 75, 81, 90, 95, 99]# test scores
+
+plt.scatter(x, y)
+plt.show()
+
+
+import matplotlib.pyplot as plt
+#import numpy as np
+
+x = [0, 1, 2, 3, 4, 5, 6, 7, 8] # hours studied
+y = [50, 55, 60, 67, 75, 81, 90, 95, 99]# Grades
+
+plt.title("Test scores")
+plt.xlabel("Hours studied")
+plt.ylabel("Grade")
+
+plt.scatter(x, y, color="blue")
+plt.show()
+
+import matplotlib.pyplot as plt
+#import numpy as np
+
+x = [0, 1, 2, 3, 4, 5, 6, 7, 8] # hours studied
+y = [50, 55, 60, 67, 75, 81, 90, 95, 99]# Grades
+
+plt.title("Test scores")
+plt.xlabel("Hours studied")
+plt.ylabel("Grade")
+
+plt.scatter(x, y, color="blue",
+           alpha = 0.55)
+plt.show()
+
+import matplotlib.pyplot as plt
+#import numpy as np
+
+x1 = [0, 1, 2, 3, 4, 5, 6, 7, 8] # hours studied
+y1 = [50, 55, 60, 67, 75, 81, 90, 95, 99]# Grades
+
+
+x2 = [0, 1, 2, 3, 3, 5, 5, 6, 7] # hours studied
+y2 = [50, 58, 63, 69, 77, 85, 92, 99, 101]# Grade
+
+plt.title("Test scores")
+plt.xlabel("Hours studied")
+plt.ylabel("Grade")
+
+plt.scatter(x1, y1, color="blue",
+           alpha = 0.55,
+           s = 200,
+           )
+
+plt.scatter(x2, y2, color="red",
+           alpha = 0.55,
+           s = 200
+           )
+plt.show()
+
+
+import matplotlib.pyplot as plt
+#import numpy as np
+
+x1 = [0, 1, 2, 3, 4, 5, 6, 7, 8] # hours studied
+y1 = [50, 55, 60, 67, 75, 81, 90, 95, 99]# Grades
+
+
+x2 = [0, 1, 2, 3, 3, 5, 5, 6, 7] # hours studied
+y2 = [50, 58, 63, 69, 77, 85, 92, 99, 101]# Grade
+
+plt.title("Test scores")
+plt.xlabel("Hours studied")
+plt.ylabel("Grade")
+
+
+plt.scatter(x1, y1, color="blue",
+           alpha = 0.55,
+           s = 100,
+            label="ClassA"
+           )
+
+plt.scatter(x2, y2, color="red",
+           alpha = 0.55,
+           s = 100,
+            label="ClassB"
+           )
+plt.legend()
+plt.show() 
