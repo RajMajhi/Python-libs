@@ -31,7 +31,9 @@ Advance-Python/
 ├── grid.ipynb               # Grid customization in plots
 ├── marker.ipynb             # Marker styling experiments
 ├── Tempproject.ipynb        # Daily temperature visualization project
-│
+├── Histogram                
+├── Frame
+├─
 ├── complete.csv             # Dataset used for experiments
 ├── .gitignore
 ├── LICENSE
