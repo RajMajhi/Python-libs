@@ -21,6 +21,7 @@ y = np.array ([10, 30, 15, 30, 10])
 plt.plot(x,y)
 plt.show()
 
+
 #Markers
 import matplotlib.pyplot as plt
 import numpy as np
@@ -767,5 +768,102 @@ plt.title("Exam scores")
 plt.xlabel("Score")
 plt.ylabel("# of students")
 plt.show()
+
+#Frame = The entire canvas
+#Ax = A single plot (SUbplot)
+import matplotlib.pyplot as plt
+import numpy as np
+
+print(plt.subplots(2,2))
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+figure, axes = plt.subplots(1,2)
+
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4, 5])
+figure, axes = plt.subplots(2,2)
+
+axes[0, 0].plot(x, x*2,color="blue")
+axes[0, 0].set_title("x*2")
+
+
+plt.tight_layout()
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4, 5])
+figure, axes = plt.subplots(2,2)
+
+axes[0, 0].plot(x, x*2,color="blue")
+axes[0, 0].set_title("x*2")
+axes[0, 1].plot(x, x**2, color="red")
+axes[0, 1].set_title("x**2")
+
+plt.tight_layout()
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4, 5])
+figure, axes = plt.subplots(2,2)
+
+axes[0, 0].plot(x, x*2,color="blue")
+axes[0, 0].set_title("x*2")
+axes[0, 1].plot(x, x**2, color="red")
+axes[0, 1].set_title("x**2")
+axes[1, 0].plot(x, x**3, color="green")
+axes[1, 0].set_title("x**3")
+
+plt.tight_layout()
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4, 5])
+figure, axes = plt.subplots(2,2)
+
+axes[0, 0].plot(x, x*2,color="blue")
+axes[0, 0].set_title("x*2")
+axes[0, 1].plot(x, x**2, color="red")
+axes[0, 1].set_title("x**2")
+axes[1, 0].plot(x, x**3, color="green")
+axes[1, 0].set_title("x**3")
+axes[1, 1].plot(x, x**4, color="purple")
+axes[1, 1].set_title("x**4")
+
+plt.tight_layout()
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([1, 2, 3, 4, 5])
+figure, axes = plt.subplots(2,2)
+
+axes[0, 0].plot(x, x*2,color="blue")
+axes[0, 0].set_title("x*2")
+axes[0, 1].bar(x, x**2, color="red")
+axes[0, 1].set_title("x**2")
+axes[1, 0].plot(x, x**3, color="green")
+axes[1, 0].set_title("x**3")
+axes[1, 1].plot(x, x**4, color="purple")
+axes[1, 1].set_title("x**4")
+
+plt.tight_layout()
+plt.show()
+
+
+
+
 
 
