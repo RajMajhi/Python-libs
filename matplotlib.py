@@ -862,6 +862,82 @@ axes[1, 1].set_title("x**4")
 plt.tight_layout()
 plt.show()
 
+# Matplotlib, Numpy, Pandas 
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+print(df)
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+print(df["FIRST_NAME"])
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+print(df["FIRST_NAME"].value_counts())
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+type_count =df["FIRST_NAME"].value_counts(ascending=True)
+plt.barh(type_count.index,type_count.values)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+type_count =df["FIRST_NAME"].value_counts()
+plt.barh(type_count.index,type_count.values)
+plt.tight_layout()
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+type_count =df["MANAGER_ID"].value_counts(ascending=True)
+plt.barh(type_count.index,type_count.values)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+type_count =df["MANAGER_ID"].value_counts(ascending=True)
+plt.barh(type_count.index,type_count.values,color="blue",edgecolor="black")
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+df = pd.read_csv("employees.csv")
+type_count =df["MANAGER_ID"].value_counts(ascending=True)
+plt.barh(type_count.index,type_count.values,color="blue",edgecolor="black")
+
+plt.title("# of pokemon by Primary Type")
+plt.xlabel("Count")
+plt.ylabel("Type")
+plt.tight_layout()
+plt.show()
+
+
 
 
 
