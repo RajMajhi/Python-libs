@@ -33,7 +33,8 @@ Advance-Python/
 ├── Tempproject.ipynb        # Daily temperature visualization project
 ├── Histogram.ipynb                
 ├── Frame.ipynb
-├── PMN.ipynb                
+├── PMN.ipynb
+├── npArray1.ipynb               
 ├── employee.csv             # Dataset used for PMN
 ├─
 ├── complete.csv             # Dataset used for experiments
